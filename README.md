@@ -32,8 +32,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: (https://peechidi.github.com/Testimonial-Grid-Section)
-- Live Site URL:(https://peechidi.github.oi/Testimonial-Grid-Section)
+- Solution URL: (https://peechidi.github.com/Testimonial-Grid-Section/)
+- Live Site URL:(https://peechidi.github.oi/Testimonial-Grid-Section/)
 
 ## My process
 
