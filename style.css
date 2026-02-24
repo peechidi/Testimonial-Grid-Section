@@ -1,0 +1,121 @@
+@font-face {
+  font-family: 'Barlow';
+  src: url(BarlowSemiCondensed-Regular.ttf);
+}
+
+
+body {
+    font-size: 13px;
+    background-color: hsl(0, 0%, 81%);
+    font-family: 'Barlow', sans-serif, serif ;
+}
+
+h1,
+h2 {
+  margin: 0;
+  font-weight: 400;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1.5rem;
+    padding: 1.8rem;
+    border-radius: 8px;
+    
+} 
+.container h2 {
+    font-size: 1.15rem;   
+    line-height: 1.3;
+  }
+  
+  .container p {
+    font-size: 1.3rem;
+    line-height: 1.1;
+    max-width: 95%;
+    font-weight: 800;
+  }
+  .container q {
+    font-size: 0.9rem;
+    line-height: 1.6;
+    max-width: 95%
+  }
+  
+  .container > * + * {
+    margin-top: 0.8rem;
+  }
+
+.card-one {
+    grid-column: 1 / 3;  
+    grid-row: 1;
+    background-color:  hsl(263, 55%, 52%);
+    border-radius: 8px;
+    color: white;
+    padding: 1.5rem;
+    background-image: url("images/bg-pattern-quotation.svg");
+    background-repeat: no-repeat;
+    background-position: top 1rem right 2rem;
+  }
+  
+  .card-two {
+    grid-column: 3 / 4;  
+    grid-row: 1;
+    border-radius: 8px;
+    background-color: hsl(219, 29%, 14%);
+    color: white;
+    padding: 1.5rem;
+  }
+  
+  .card-five {
+    grid-column: 4 / 5;   
+    grid-row: 1 / 3;      
+    background-color: white;
+    border-radius: 8px;
+    padding: 1.5rem;
+  }
+  
+  .card-three {
+    grid-column: 1 / 2;   
+    grid-row: 2;
+    background-color: white;
+    border-radius: 8px;
+    padding: 1.5rem;
+  }
+  
+  .card-four {
+    grid-column: 2 / 4;   
+    grid-row: 2;
+    color: white;
+    background-color: black;
+    border-radius: 8px;
+    padding: 1.5rem;
+  }
+
+  
+
+  .image-align {
+    display: flex;
+    gap: 1.8rem;
+  }
+  .heading {
+    display: block;
+  }
+ .image-align img {
+  border-radius: 50%;
+ }
+
+
+  @media (max-width: 768px) {
+    .container {
+      grid-template-columns: 1fr;
+    }
+  
+    .card-one,
+    .card-two,
+    .card-three,
+    .card-four,
+    .card-five {
+      grid-column: auto;
+      grid-row: auto;
+    }
+  }
